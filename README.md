@@ -1,12 +1,66 @@
-# React + Vite
+# 404.exe - Interactive Story Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive story engine that allows users to navigate through a narrative with choices that affect the outcome. The application features AI-powered story generation using Google's Gemini AI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive story navigation with multiple choices
+- AI-powered story generation using Gemini AI
+- Visual background scenes that change based on the story context
+- Inventory system for collecting and using items
+- Narration controls for text-to-speech
+- Dark mode support
+- Responsive design for various screen sizes
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router
+- Tailwind CSS
+- Google Generative AI (Gemini)
+- Web Speech API
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- A Gemini API key from Google AI Studio
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Create a `.env` file in the root directory with your Gemini API key:
+   ```
+   VITE_GEMINI_API_KEY=your_api_key_here
+   ```
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+
+## Usage
+
+- Navigate to the home page to start a new story
+- Make choices to progress through the narrative
+- Collect items in your inventory
+- Use the narration controls to have the story read aloud
+- Toggle dark mode for a different visual experience
+
+## Project Structure
+
+- `src/components/` - UI components
+- `src/context/` - React context for state management
+- `src/data/` - Story data in JSON format
+- `src/pages/` - Page components
+- `src/services/` - API and service integrations
+
+## License
+
+MIT
